@@ -1,0 +1,16 @@
+C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Data\obj\Debug\netcoreapp3.1\CheckBox.Data.csproj.AssemblyReference.cache
+C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Data\obj\Debug\netcoreapp3.1\CheckBox.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Data\obj\Debug\netcoreapp3.1\CheckBox.Data.AssemblyInfoInputs.cache
+C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Data\obj\Debug\netcoreapp3.1\CheckBox.Data.AssemblyInfo.cs
+C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Data\obj\Debug\netcoreapp3.1\CheckBox.Data.csproj.CoreCompileInputs.cache
+C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Data\bin\Debug\netcoreapp3.1\CheckBox.Data.deps.json
+C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Data\bin\Debug\netcoreapp3.1\CheckBox.Data.runtimeconfig.json
+C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Data\bin\Debug\netcoreapp3.1\CheckBox.Data.runtimeconfig.dev.json
+C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Data\bin\Debug\netcoreapp3.1\CheckBox.Data.dll
+C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Data\bin\Debug\netcoreapp3.1\CheckBox.Data.pdb
+C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Data\bin\Debug\netcoreapp3.1\CheckBox.Core.dll
+C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Data\bin\Debug\netcoreapp3.1\CheckBox.Core.pdb
+C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Data\obj\Debug\netcoreapp3.1\CheckBox.Data.csproj.CopyComplete
+C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Data\obj\Debug\netcoreapp3.1\CheckBox.Data.dll
+C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Data\obj\Debug\netcoreapp3.1\CheckBox.Data.pdb
+C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Data\obj\Debug\netcoreapp3.1\CheckBox.Data.genruntimeconfig.cache

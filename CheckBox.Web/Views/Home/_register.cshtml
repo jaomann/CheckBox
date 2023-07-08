@@ -1,0 +1,51 @@
+﻿@model UserViewModel
+
+<div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-warning">
+                <h5 class="modal-title" id="exampleModalLabel">Register</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body bg-dark text-white">
+                <form method="post" asp-action="Register" asp-controller="Auth">
+                    <div class="row">
+                        <div class="col-md-6">
+                            @Html.DisplayNameFor(x => x.Name)
+                            @Html.TextBoxFor(x => x.Name, new{placeholder="Informe seu nome", @class="form-control"})
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-6">
+                            @Html.DisplayNameFor(x => x.Surname)
+                            @Html.TextBoxFor(x => x.Surname, new {placeholder="Informe seu sobrenome", @class="form-control"})
+                            <span asp-validation-for="Surname" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-md-12">
+                            @Html.TextBoxFor(x=> x.Email, new{placeholder="Email", @class="form-control mt-2"})
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-md-12">
+                            @Html.PasswordFor(x => x.Password, new{placeholder="Senha", @class="form-control mt-2"})
+                            <span asp-validation-for="Password" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-warning text-dark">Registrar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
