@@ -1,10 +1,13 @@
-﻿using System.ComponentModel;
+﻿using System;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
 namespace CheckBox.Web.Models
 {
     public class UserViewModel
     {
+        public Guid Id { get; set; }
+
         [DisplayName("Nome")]
         [MaxLength(15)]
         [Required(ErrorMessage = "Campo Obrigatório")]

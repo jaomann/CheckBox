@@ -3,26 +3,44 @@
 
 @{
     ViewData["Title"] = "Welcome";
+    var errorMessage = (string)ViewData["Error"];
 }
 
 <div class="container-index">
     <div style="border-radius:100px;background-image:linear-gradient(#ffe671,#ffa543)" 
          class="login-card">
-            <div class="Brand" style="display:flex; margin-top:15px; justify-content:end; margin-right:85px; margin-bottom:-30px;">
-            <img src="~/imgs/CheckLogo.png" width="10%" />
-            <h2>Check</h2><h2 class="text-light">Box</h2>
-        </div>
+            
+            <div style="display:flex; margin-top:15px; justify-content:initial; margin-bottom:-20px;" id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active text-center">
+                        <h4 class="d-block w-100">Armazene ideias</h4>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <h4 class="d-block w-100">Seja mais produtivo</h4>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <h4 class="d-block w-100">Se organize da melhor forma</h4>
+                    </div>
+                </div>
+            </div>
+        <div class="Brand" style="display: flex; margin-top: 15px;justify-content: end;margin-right: 90px; margin-bottom: -30px;">
+                    <img src="~/imgs/CheckLogo.png" width="10%" />
+                    <h2>Check</h2><h2 class="text-light">Box</h2>
+            </div>
         <div class="itens">
-            <form method="post" asp-controller="Auth" asp-action="Login">
+            <form method="post" asp-controller="Auth" asp-action="Index">
                 <h5 class="text-white">Login</h5>
                 @Html.TextBoxFor(x => x.Email, new{placeholder ="Insira seu email", @class="form-control mt-2"})
                 <span asp-validation-for="Email" class="text-danger"></span>
                 @Html.PasswordFor(x => x.Password, new{placeholder = "Insira sua senha", @class="form-control mt-2"})
                 <span asp-validation-for="Password" class="text-danger"></span>
                 <button type="submit" class="btn btn-warning text-dark mt-3">Entrar</button>
+                <div class="row mt-2 text-center">
+                </div>
                 <div class="row mt-2 text-white">
                     <div class="col-md-12">
                         <p>Ainda não tem conta? <a asp-action="Register" asp-controller="Auth" class="text-white" type="button" data-toggle="modal" data-target="#register"> Clica aqui</a></p>
+                        <p class="text-danger">@errorMessage</p>
                     </div>
                 </div>
             </form>

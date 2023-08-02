@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
 using System.Collections.Generic;
+using System;
 using System.Text;
 
 namespace CheckBox.Data
@@ -18,7 +18,8 @@ namespace CheckBox.Data
         {
             if (!string.IsNullOrEmpty(_connectionString))
             {
-                optionsBuilder.UseInMemoryDatabase("CheckBoxDB");
+                optionsBuilder.UseSqlServer(_connectionString);
+                                            /*"Server=(localdb)\\MSSQLLocalDB;Database=ClassroomHubDB;Trusted_Connection=True;"*/
             }
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)

@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CheckBox.Services", "CheckB
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CheckBox.Data", "CheckBox.Data\CheckBox.Data.csproj", "{9E1D836B-A080-4C17-8908-059AD5EB2047}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckBox.DependencyInjection", "CheckBox.DependencyInjection\CheckBox.DependencyInjection.csproj", "{9DFBD11E-330D-498E-A8E6-83E5EB0EF17F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CheckBox.DependencyInjection", "CheckBox.DependencyInjection\CheckBox.DependencyInjection.csproj", "{9DFBD11E-330D-498E-A8E6-83E5EB0EF17F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

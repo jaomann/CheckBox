@@ -14,6 +14,7 @@ using CheckBox.Web.Mapper;
 using Microsoft.Extensions.Options;
 using CheckBox.Data;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Hosting.Server;
 
 namespace CheckBox.Web
 {
@@ -33,7 +34,7 @@ namespace CheckBox.Web
             services.AddServicesDependency();
             services.AddRepositoryDependency();
             services.AddAutoMapper(typeof(MapperProfile));
-            services.AddDbContext<Context>(opt => opt.UseInMemoryDatabase("CheckDB"));
+            services.AddDbContext<Context>(opt => opt.UseSqlServer("Server = (localdb)\\MSSQLLocalDB; Database = CheckDB; Trusted_Connection = True;"));
 
             //services.AddIdentity<ApplicationUser, IdentityRole>()
             //    .AddEntityFrameworkStores<ApplicationDbContext>()
@@ -64,7 +65,7 @@ namespace CheckBox.Web
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Auth}/{action=Index}/{id?}");
             });
         }
     }

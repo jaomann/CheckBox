@@ -17,8 +17,10 @@ namespace CheckBox.Data.Repositories
 
         public void Add(T entity)
         {
-            _context.Set<T>().Add(entity);
-            _context.SaveChanges();
+            var dbset = this._context.Set<T>();
+            entity.Id = Guid.NewGuid();
+            dbset.Add(entity);
+            this._context.SaveChanges();
         }
 
         public void Delete(Guid id)

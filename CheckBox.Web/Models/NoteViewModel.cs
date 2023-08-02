@@ -6,6 +6,7 @@ namespace CheckBox.Web.Models
 {
     public class NoteViewModel
     {
+        public Guid Id { get; set; }
         [DisplayName("Nome")]
         [MaxLength(20)]
         [Required(ErrorMessage = "Campo Obrigatório")]

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "65IZNzUz+iiLXlf/lUHLKg0nOwYZINsUFvTY8mVGVRnmmWJjTtlQOS9jPwnN+xs5BR4niWp4R3Udp3jxaLjKrQ==",
+  "dgSpecHash": "DNznKQwhgflryUR8lOGlqKtlR2FIKBeUKv4l2bVv/zpOiLBtZyVJ5RCexyujMW5JKSYRiSplWLtyYZQ8C7SX8g==",
   "success": true,
   "projectFilePath": "C:\\Users\\João Emanuel\\source\\repos\\CheckBox\\CheckBox.Web\\CheckBox.Web.csproj",
   "expectedPackageFiles": [
@@ -16,6 +16,7 @@
     "C:\\Users\\João Emanuel\\.nuget\\packages\\microsoft.entityframeworkcore\\3.1.32\\microsoft.entityframeworkcore.3.1.32.nupkg.sha512",
     "C:\\Users\\João Emanuel\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\3.1.32\\microsoft.entityframeworkcore.abstractions.3.1.32.nupkg.sha512",
     "C:\\Users\\João Emanuel\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\3.1.32\\microsoft.entityframeworkcore.analyzers.3.1.32.nupkg.sha512",
+    "C:\\Users\\João Emanuel\\.nuget\\packages\\microsoft.entityframeworkcore.design\\3.1.32\\microsoft.entityframeworkcore.design.3.1.32.nupkg.sha512",
     "C:\\Users\\João Emanuel\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\3.1.32\\microsoft.entityframeworkcore.inmemory.3.1.32.nupkg.sha512",
     "C:\\Users\\João Emanuel\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\3.1.32\\microsoft.entityframeworkcore.relational.3.1.32.nupkg.sha512",
     "C:\\Users\\João Emanuel\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\3.1.32\\microsoft.entityframeworkcore.sqlserver.3.1.32.nupkg.sha512",
