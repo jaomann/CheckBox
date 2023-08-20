@@ -1,20 +1,12 @@
+using CheckBox.Data;
+using CheckBox.DependencyInjection;
+using CheckBox.Web.Mapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using CheckBox.DependencyInjection;
-using Microsoft.AspNetCore.Identity;
-using CheckBox.Web.Mapper;
-using Microsoft.Extensions.Options;
-using CheckBox.Data;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Hosting.Server;
 
 namespace CheckBox.Web
 {

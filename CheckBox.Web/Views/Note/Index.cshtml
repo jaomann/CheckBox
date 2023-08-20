@@ -1,2 +1,44 @@
-﻿@using CheckBox.Web.Models;
-@model IEnumerable<NoteViewModel>
+﻿@{
+    ViewData["Title"] = "Your notes";
+    var notes = (IEnumerable<NoteViewModel>)ViewBag.Notes;
+    var userName = ViewData["user_name"];
+    Layout = "_LoggedLayout";
+}
+<div style="border-bottom-right-radius:25px;" class="pl-3 bg-transparent container-fluid">
+    <header class="justify-content-xl-start text-white mt-1" style="display:flex">
+        <h2 class="text-light">Olá,</h2><h2 class="text-warning ml-2"> @userName</h2>
+    </header>
+   <main class="bg-dark rounded">
+       <h3 class="pl-2 mt-2 text-white-50">Suas notes</h3>
+        @{
+            if (notes.Any())
+            {
+                foreach(var note in notes)
+                    {
+                    <div class="m-5 container-fluid" style="display:block;">
+                        <div class="row">
+                            <div style="background-color:#000; border-top-left-radius:10px; border-top-right-radius:10px;" class="pl-1 col-md-4 text-light">
+                                <h5>@Html.DisplayFor(x => note.Name)</h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="rounded bg-warning col-md-4 mr-5 text-dark">
+                                <p style="padding:2px">@Html.DisplayFor(x=> note.Content)</p>
+                            </div>
+                        </div>
+                        <p class="text-muted">@Html.DisplayFor(x => note.Born)</p>
+                    </div>
+                }
+            }
+            else
+            {
+                <div class="row text-center text-light mt-2">
+                    <div class="col-md-12">
+                        <p>Vazio...</p>
+                    </div>
+                </div>
+            }
+        }
+            <partial name="_create" model="new NoteViewModel()"></partial>
+   </main>
+</div>

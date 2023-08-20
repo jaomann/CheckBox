@@ -31,7 +31,7 @@ namespace CheckBox.Web.Controllers
             if (current_user != null)
             {
                 TempData["user_id"] = current_user.Id;
-                return RedirectToAction("Index", "Initial");
+                return RedirectToAction("Index", "Note");
             }
             else
             {
