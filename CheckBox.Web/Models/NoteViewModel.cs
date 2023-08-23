@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CheckBox.Core.Entities;
+using System;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
@@ -19,7 +20,9 @@ namespace CheckBox.Web.Models
         [DisplayFormat(DataFormatString="{0:D}")]
         [Required(ErrorMessage = "Campo Obrigatório")]
         public DateTime Born { get; set; }
+        public Guid UserId { get; set; }
+        public User User { get; set; }
 
-        
+
     }
 }

@@ -11,9 +11,10 @@
     <div>
         <header>
             <nav class="nav nav-pills flex-column flex-sm-row justify-content-end bg-transparent">
-                <a class="pt-2  flex-sm-justified btn-outline-warning text-sm-center nav-link active" asp-action="Index" asp-controller="Initial">Notes</a>
-                <a class="pt-2  flex-sm-justified btn-outline-warning text-sm-center nav-link" href="#">Perfil</a>
+                <a class="pt-2  flex-sm-justified btn-outline-warning text-sm-center nav-link active" asp-action="Index" asp-controller="Note">Notes</a>
+                <a class="pt-2  flex-sm-justified text-sm-center nav-link" href="#">Perfil</a>
                 <a class="pt-2 mr-2 text-muted flex-sm-justified  text-sm-center nav-link" href="#">Sobre</a>
+                <a class="pt-2 mr-2 flex-sm-justified btn btn-outline-danger  text-sm-center nav-link" asp-action="Index" asp-controller="Auth">Logout</a>
             </nav>
         </header>
         <main role="main">

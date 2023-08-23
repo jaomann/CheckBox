@@ -92,10 +92,10 @@ C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\bin\Debug\netcoreapp3.
 C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\bin\Debug\netcoreapp3.1\AutoMapper.dll
 C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
-C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\obj\Debug\netcoreapp3.1\Razor\Views\Note\Index.cshtml.g.cs
 C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.InMemory.dll
 C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\obj\Debug\netcoreapp3.1\Razor\Views\Auth\Index.cshtml.g.cs
 C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\obj\Debug\netcoreapp3.1\Razor\Views\Auth\_register.cshtml.g.cs
 C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoggedLayout.cshtml.g.cs
-C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\obj\Debug\netcoreapp3.1\Razor\Views\Note\_create.cshtml.g.cs
+C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\obj\Debug\netcoreapp3.1\Razor\Views\Note\Create.cshtml.g.cs
+C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\obj\Debug\netcoreapp3.1\Razor\Views\Note\Index.cshtml.g.cs

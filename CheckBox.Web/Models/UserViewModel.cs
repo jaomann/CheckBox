@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CheckBox.Core.Entities;
+using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
@@ -27,6 +29,7 @@ namespace CheckBox.Web.Models
         [MaxLength(20)]
         [Required(ErrorMessage = "Campo Obrigatório")]
         public string Password { get; set; }
+        public IEnumerable<Note> Notes { get; set; }
 
     }
 }

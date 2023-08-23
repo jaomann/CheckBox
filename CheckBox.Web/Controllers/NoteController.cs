@@ -31,17 +31,25 @@ namespace CheckBox.Web.Controllers
             else
             {
                 Guid id = (Guid)TempData["user_id"];
-                var notes = _mapper.Map<IEnumerable<NoteViewModel>>(_noteService.GetAll().Where(x => x.User_Id.Equals(id)));
                 var user = _mapper.Map<UserViewModel>(_userServices.GetbyID(id));
+                ViewData["user"] = user;
+                var notes = _mapper.Map<IEnumerable<NoteViewModel>>(_noteService.GetAll().Where(x => x.UserId.Equals(user.Id)));
                 ViewBag.Notes = notes;
-                ViewData["user_name"] = user.Name;
+                return View();
             }
-            return View();
         }
+        public IActionResult Create(Guid id)
+        {
+            var user = _mapper.Map<UserViewModel>(_userServices.GetbyID(id));
+            TempData["user_id"] = id;
+            return View(new NoteViewModel() { UserId = id, Born = DateTime.Now});
+        }
+        [HttpPost]
         public IActionResult Create(NoteViewModel entity)
         {
+            TempData["user_id"] = entity.UserId;
             var note = _mapper.Map<Note>(entity);
-            note.Born = DateTime.Now;
+            note.Id = new Guid();
             _noteService.Create(note);
             return RedirectToAction(nameof(Index));
         }
