@@ -15,18 +15,22 @@
             {
                 foreach (var note in notes)
                 {
-                    <div class="m-5 container-fluid" style="display:block;">
+                    <div class="mt-1 ml-2 mb-1 container-fluid" style="display:block;">
                         <div class="row">
                             <div style="background-color:#000; border-top-left-radius:10px; border-top-right-radius:10px;" class="pl-1 col-md-4 text-light">
                                 <h5>@Html.DisplayFor(x => note.Name)</h5>
                             </div>
                         </div>
                         <div class="row">
-                            <div style="height:5rem;"class="rounded bg-warning col-md-4 mr-5 text-dark">
+                            <div style="height:5rem;" class="rounded bg-warning col-md-4 text-dark">
                                 <p style="padding:2px">@Html.DisplayFor(x=> note.Content)</p>
                             </div>
+                            <div style="background-color:#000; border-top-right-radius:5px;border-bottom-right-radius:10px; width:5rem; display:flex; justify-content:center; align-items:center;">
+                                <a class="m-2" style="color:white;" asp-action="Delete" asp-route-id="@note.Id" asp-route-userid="@user.Id"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                <a class="m-2" style="color:white;" asp-action="Editar" asp-route-id="@note.Id" asp-route-userid="@user.Id"><i class="fas fa-edit"></i></a>
+                            </div>
                         </div>
-                        <p class="text-muted">@Html.DisplayFor(x => note.Born)</p>
+                        <p style="margin-left:28rem" class="text-muted">@Html.DisplayFor(x => note.Born)</p>
                     </div>
                 }
             }
@@ -40,7 +44,7 @@
             }
             <div class="row">
                 <div class="col-md-12">
-                    <a class="btn btn-outline-success"asp-action="Create" asp-route-id="@user.Id">Create</a>
+                    <a class="btn btn-outline-dark m-3" asp-action="Create" asp-route-id="@user.Id">Create</a>
                 </div>
             </div>
         }

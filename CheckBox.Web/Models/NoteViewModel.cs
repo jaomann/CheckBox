@@ -13,7 +13,7 @@ namespace CheckBox.Web.Models
         [Required(ErrorMessage = "Campo Obrigatório")]
         public string Name { get; set; }
         [DisplayName("Conteudo da Note")]
-        [MaxLength(400)]
+        [MaxLength(241, ErrorMessage = "Limite ultrapassado")]
         [Required(ErrorMessage = "Campo Obrigatório")]
         public string Content { get; set; }
         [DisplayName("Data de criação")]

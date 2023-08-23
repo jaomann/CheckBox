@@ -40,7 +40,6 @@ namespace CheckBox.Web.Controllers
         }
         public IActionResult Create(Guid id)
         {
-            var user = _mapper.Map<UserViewModel>(_userServices.GetbyID(id));
             TempData["user_id"] = id;
             return View(new NoteViewModel() { UserId = id, Born = DateTime.Now});
         }
@@ -51,6 +50,30 @@ namespace CheckBox.Web.Controllers
             var note = _mapper.Map<Note>(entity);
             note.Id = new Guid();
             _noteService.Create(note);
+            return RedirectToAction(nameof(Index));
+        }
+        public IActionResult Delete(Guid id, Guid userid)
+        {
+            TempData["user_id"] = userid;
+            _noteService.Delete(id);
+            return RedirectToAction(nameof(Index));
+        }
+        public IActionResult Editar(Guid id, Guid userid)
+        {
+            TempData["user_id"] = userid;
+            var note = _mapper.Map<NoteViewModel>(_noteService.GetbyID(id));
+            TempData["note_id"] = note.Id;
+            note.UserId = userid;
+            note.Id = id;
+            note.Born = DateTime.Now;
+            return View(note);
+        }
+        [HttpPost]
+        public IActionResult Editar(NoteViewModel entity, Guid userid)
+        {
+            var note = _mapper.Map<Note>(entity);
+            _noteService.Update(note);
+            TempData["user_id"] = userid;
             return RedirectToAction(nameof(Index));
         }
 
