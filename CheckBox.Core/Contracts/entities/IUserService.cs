@@ -6,5 +6,6 @@ namespace CheckBox.Core.Contracts.entities
     public interface IUserService : IBaseService<User>
     {
         User ValidateUser(User entity);
+        string GenerateHashCode(string entity);
     }
 }

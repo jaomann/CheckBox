@@ -3,9 +3,8 @@ using CheckBox.Core.Contracts.entities;
 using CheckBox.Core.Entities;
 using CheckBox.Web.Models;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore.Internal;
-using System;
-
+using System.Collections;
+using System.Security.Cryptography;
 namespace CheckBox.Web.Controllers
 {
     public class AuthController : Controller
@@ -44,6 +43,7 @@ namespace CheckBox.Web.Controllers
         public IActionResult Register(UserViewModel entity)
         {
             var entityUser = _mapper.Map<User>(entity);
+            entityUser.Password = _userService.GenerateHashCode(entity.Password);
             _userService.Create(entityUser);
             return RedirectToAction("Index", "Auth");
         }

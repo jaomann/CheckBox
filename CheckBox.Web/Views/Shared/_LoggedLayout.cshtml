@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"]</title>
+    <link rel="icon" href="~/imgs/logo.png" />
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -13,7 +14,7 @@
         <header>
             <nav class="nav nav-pills flex-column flex-sm-row justify-content-end bg-transparent">
                 <a class="pt-2  flex-sm-justified btn-outline-warning text-sm-center nav-link active" asp-action="Index" asp-controller="Note">Notes</a>
-                <a class="pt-2  flex-sm-justified text-sm-center nav-link" href="#">Perfil</a>
+                <a class="pt-2  flex-sm-justified text-sm-center nav-link text-muted" href="#">Perfil</a>
                 <a class="pt-2 mr-2 text-muted flex-sm-justified  text-sm-center nav-link" href="#">Sobre</a>
                 <a class="pt-2 mr-2 flex-sm-justified btn btn-outline-danger  text-sm-center nav-link" asp-action="Index" asp-controller="Auth">Logout</a>
             </nav>

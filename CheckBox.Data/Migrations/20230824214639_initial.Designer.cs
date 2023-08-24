@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CheckBox.Data.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20230823181604_initial")]
+    [Migration("20230824214639_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
