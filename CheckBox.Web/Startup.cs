@@ -26,7 +26,7 @@ namespace CheckBox.Web
             services.AddServicesDependency();
             services.AddRepositoryDependency();
             services.AddAutoMapper(typeof(MapperProfile));
-            services.AddDbContext<Context>(opt => opt.UseSqlServer("Server = (localdb)\\MSSQLLocalDB; Database = CheckDB; Trusted_Connection = True;"));
+            services.AddDbContext<Context>(opt => opt.UseSqlServer("Server=DESKTOP-O2Q1VSQ\\SQLEXPRESS;Database=CheckDB;Trusted_Connection=True;"));
 
             //services.AddIdentity<ApplicationUser, IdentityRole>()
             //    .AddEntityFrameworkStores<ApplicationDbContext>()

@@ -22,8 +22,8 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div style="height:5rem;" class="rounded bg-warning col-md-4 text-dark">
-                                <p style="padding:2px">@Html.DisplayFor(x=> note.Content)</p>
+                            <div style="height:10rem;" class="rounded bg-warning col-md-4 text-dark">
+                                <p style="padding:2px;word-wrap:break-word;max-width:100ch;">@Html.DisplayFor(x=> note.Content)</p>
                             </div>
                             <div style="background-color:#000; border-top-right-radius:5px;border-bottom-right-radius:10px; width:5rem; display:flex; justify-content:center; align-items:center;">
                                 <a class="m-2" style="color:white;" asp-action="Delete" asp-route-id="@note.Id" asp-route-userid="@user.Id"><i class="fa fa-trash" aria-hidden="true"></i></a>

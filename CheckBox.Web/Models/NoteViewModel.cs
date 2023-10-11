@@ -9,11 +9,11 @@ namespace CheckBox.Web.Models
     {
         public Guid Id { get; set; }
         [DisplayName("Nome")]
-        [MaxLength(20)]
+        [MaxLength(64)]
         [Required(ErrorMessage = "Campo Obrigatório")]
         public string Name { get; set; }
         [DisplayName("Conteudo da Note")]
-        [MaxLength(241, ErrorMessage = "Limite ultrapassado")]
+        [MaxLength(256, ErrorMessage = "Limite ultrapassado")]
         [Required(ErrorMessage = "Campo Obrigatório")]
         public string Content { get; set; }
         [DisplayName("Data de criação")]
