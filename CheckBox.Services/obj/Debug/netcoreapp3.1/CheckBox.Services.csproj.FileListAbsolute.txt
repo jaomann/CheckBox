@@ -1,5 +1,4 @@
 C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Services\obj\Debug\netcoreapp3.1\CheckBox.Services.csproj.AssemblyReference.cache
-C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Services\obj\Debug\netcoreapp3.1\CheckBox.Services.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Services\obj\Debug\netcoreapp3.1\CheckBox.Services.AssemblyInfoInputs.cache
 C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Services\obj\Debug\netcoreapp3.1\CheckBox.Services.AssemblyInfo.cs
 C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Services\obj\Debug\netcoreapp3.1\CheckBox.Services.csproj.CoreCompileInputs.cache
@@ -13,3 +12,4 @@ C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Services\bin\Debug\netcore
 C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Services\obj\Debug\netcoreapp3.1\CheckBox.Services.csproj.CopyComplete
 C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Services\obj\Debug\netcoreapp3.1\CheckBox.Services.dll
 C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Services\obj\Debug\netcoreapp3.1\CheckBox.Services.pdb
+C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Services\obj\Debug\netcoreapp3.1\CheckBox.Services.GeneratedMSBuildEditorConfig.editorconfig

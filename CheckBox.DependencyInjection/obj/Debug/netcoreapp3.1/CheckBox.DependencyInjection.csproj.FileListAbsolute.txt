@@ -8,10 +8,10 @@ C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.DependencyInjection\bin\De
 C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.DependencyInjection\bin\Debug\netcoreapp3.1\CheckBox.Data.pdb
 C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.DependencyInjection\bin\Debug\netcoreapp3.1\CheckBox.Services.pdb
 C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.DependencyInjection\obj\Debug\netcoreapp3.1\CheckBox.DependencyInjection.csproj.AssemblyReference.cache
-C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.DependencyInjection\obj\Debug\netcoreapp3.1\CheckBox.DependencyInjection.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.DependencyInjection\obj\Debug\netcoreapp3.1\CheckBox.DependencyInjection.AssemblyInfoInputs.cache
 C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.DependencyInjection\obj\Debug\netcoreapp3.1\CheckBox.DependencyInjection.AssemblyInfo.cs
 C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.DependencyInjection\obj\Debug\netcoreapp3.1\CheckBox.DependencyInjection.csproj.CoreCompileInputs.cache
 C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.DependencyInjection\obj\Debug\netcoreapp3.1\CheckBox.DependencyInjection.csproj.CopyComplete
 C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.DependencyInjection\obj\Debug\netcoreapp3.1\CheckBox.DependencyInjection.dll
 C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.DependencyInjection\obj\Debug\netcoreapp3.1\CheckBox.DependencyInjection.pdb
+C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.DependencyInjection\obj\Debug\netcoreapp3.1\CheckBox.DependencyInjection.GeneratedMSBuildEditorConfig.editorconfig

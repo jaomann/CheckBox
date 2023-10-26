@@ -37,10 +37,7 @@ namespace CheckBox.Services
                 {
                 return real_user;
             }
-            else
-            {
-                return null;
-            }
+            return null;
             
         }
     }

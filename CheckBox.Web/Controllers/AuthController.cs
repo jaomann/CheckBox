@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using CheckBox.Core.Contracts.entities;
 using CheckBox.Core.Entities;
+using CheckBox.Web.Helper;
 using CheckBox.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections;
@@ -12,31 +13,33 @@ namespace CheckBox.Web.Controllers
         private IUserService _userService { get; set; }
         private INoteService _noteService { get; set; }
         private IMapper _mapper { get; set; }
-        public AuthController(IUserService userService, IMapper mapper, INoteService noteService)
+        private ISession _session { get; set; }
+        public AuthController(ISession session,IUserService userService, IMapper mapper, INoteService noteService)
         {
             _userService = userService;
             _mapper = mapper;
             _noteService = noteService;
+            _session = session;
         }
         public IActionResult Index()
         {
+            if(_session.FindUserSession() != null){
+                return RedirectToAction("Index","Note"); 
+            }
             return View();
         }
 
         [HttpPost]
         public IActionResult Index(UserViewModel entity)
         {
-            var current_user = _userService.ValidateUser(_mapper.Map<User>(entity));
+            var current_user = _mapper.Map<UserViewModel>(_userService.ValidateUser(_mapper.Map<User>(entity)));
             if (current_user != null)
             {
-                TempData["user_id"] = current_user.Id;
+                _session.MakeSession(current_user);
                 return RedirectToAction("Index", "Note");
             }
-            else
-            {
-                ViewData["Error"] = "Usuário ou senha incorretos";
-                return View();
-            }
+            ViewData["Error"] = "Usuário ou senha incorretos";
+            return View();
         }
 
         [HttpPost]
@@ -46,6 +49,11 @@ namespace CheckBox.Web.Controllers
             entityUser.Password = _userService.GenerateHashCode(entity.Password);
             _userService.Create(entityUser);
             return RedirectToAction("Index", "Auth");
+        }
+        public IActionResult Logout()
+        {
+            _session.RemoveSession();
+            return RedirectToAction("Index");
         }
     }
 }

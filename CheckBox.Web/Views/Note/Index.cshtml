@@ -3,50 +3,38 @@
     var notes = (IEnumerable<NoteViewModel>)ViewBag.Notes;
     var user = (UserViewModel)ViewData["user"];
     Layout = "_LoggedLayout";
+    
 }
 <div style="border-bottom-right-radius:25px;" class="pl-3 bg-transparent container-fluid">
     <header class="justify-content-xl-start text-white mt-1" style="display:flex">
         <h2 class="text-light">Olá,</h2><h2 class="text-warning ml-2"> @user.Name</h2>
     </header>
     <main class="bg-dark rounded">
-        <h3 class="pl-2 mt-2 text-white-50">Suas notes</h3>
+        <div class="row d-flex justify-content-between m-4">
+                <h2 class="mt-2 text-white-50">Suas notes</h2>
+            <a class="btn btn-outline-warning m-3" asp-action="Create" asp-route-id="@user.Id">Create</a>
+        </div>
         @{
+
             if (notes.Any())
             {
                 foreach (var note in notes)
                 {
-                    <div class="mt-1 ml-2 mb-1 container-fluid" style="display:block;">
-                        <div class="row">
-                            <div style="background-color:#000; border-top-left-radius:10px; border-top-right-radius:10px;" class="pl-1 col-md-4 text-light">
-                                <h5>@Html.DisplayFor(x => note.Name)</h5>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div style="height:10rem;" class="rounded bg-warning col-md-4 text-dark">
-                                <p style="padding:2px;word-wrap:break-word;max-width:100ch;">@Html.DisplayFor(x=> note.Content)</p>
-                            </div>
-                            <div style="background-color:#000; border-top-right-radius:5px;border-bottom-right-radius:10px; width:5rem; display:flex; justify-content:center; align-items:center;">
-                                <a class="m-2" style="color:white;" asp-action="Delete" asp-route-id="@note.Id" asp-route-userid="@user.Id"><i class="fa fa-trash" aria-hidden="true"></i></a>
-                                <a class="m-2" style="color:white;" asp-action="Editar" asp-route-id="@note.Id" asp-route-userid="@user.Id"><i class="fas fa-edit"></i></a>
-                            </div>
-                        </div>
-                        <p style="margin-left:28rem" class="text-muted">@Html.DisplayFor(x => note.Born)</p>
-                    </div>
+
+                    var parametros = new Tuple<NoteViewModel, Guid>(note, note.User.Id);
+                    <partial name="_note" model=@parametros></partial>
                 }
             }
             else
             {
                 <div class="row text-center text-light mt-2">
-                    <div class="col-md-12">
-                        <p>Vazio...</p>
+                    <div class="col-md-12 mt-3 mb-5">
+                            <img style="height:20vh;" src="~/imgs/nerd.gif" alt="empty">
+                            <h5>Sem anotações por aqui...</h5>
                     </div>
                 </div>
             }
-            <div class="row">
-                <div class="col-md-12">
-                    <a class="btn btn-outline-warning m-3" asp-action="Create" asp-route-id="@user.Id">Create</a>
-                </div>
-            </div>
+            
         }
     </main>
 </div>

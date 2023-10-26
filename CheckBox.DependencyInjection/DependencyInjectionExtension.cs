@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using CheckBox.Core.Contracts.entities;
+﻿using CheckBox.Core.Contracts.entities;
 using CheckBox.Core.Contracts.repositories;
 using CheckBox.Data.Repositories;
 using CheckBox.Services;
@@ -14,6 +11,7 @@ namespace CheckBox.DependencyInjection
         {
             services.AddScoped<INoteService, NoteService>();
             services.AddScoped<IUserService, UserService>();
+            
         }
         public static void AddRepositoryDependency(this IServiceCollection services)
         {

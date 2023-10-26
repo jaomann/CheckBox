@@ -9,7 +9,6 @@ C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\bin\Debug\netcoreapp3.
 C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\bin\Debug\netcoreapp3.1\CheckBox.Web.Views.dll
 C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\bin\Debug\netcoreapp3.1\CheckBox.Web.Views.pdb
 C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\obj\Debug\netcoreapp3.1\CheckBox.Web.csproj.AssemblyReference.cache
-C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\obj\Debug\netcoreapp3.1\CheckBox.Web.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\obj\Debug\netcoreapp3.1\CheckBox.Web.AssemblyInfoInputs.cache
 C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\obj\Debug\netcoreapp3.1\CheckBox.Web.AssemblyInfo.cs
 C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\obj\Debug\netcoreapp3.1\CheckBox.Web.csproj.CoreCompileInputs.cache
@@ -17,11 +16,6 @@ C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\obj\Debug\netcoreapp3.
 C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\obj\Debug\netcoreapp3.1\CheckBox.Web.RazorAssemblyInfo.cache
 C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\obj\Debug\netcoreapp3.1\CheckBox.Web.RazorAssemblyInfo.cs
 C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\obj\Debug\netcoreapp3.1\staticwebassets\CheckBox.Web.StaticWebAssets.Manifest.cache
-C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\obj\Debug\netcoreapp3.1\staticwebassets\CheckBox.Web.StaticWebAssets.Pack.cache
-C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.CheckBox.Web.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.build.CheckBox.Web.props
-C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildMultiTargeting.CheckBox.Web.props
-C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildTransitive.CheckBox.Web.props
 C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\obj\Debug\netcoreapp3.1\CheckBox.Web.TagHelpers.input.cache
 C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\obj\Debug\netcoreapp3.1\CheckBox.Web.TagHelpers.output.cache
 C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\obj\Debug\netcoreapp3.1\CheckBox.Web.RazorCoreGenerate.cache
@@ -35,7 +29,6 @@ C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\obj\Debug\netcoreapp3.
 C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\obj\Debug\netcoreapp3.1\CheckBox.Web.Views.pdb
 C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\obj\Debug\netcoreapp3.1\CheckBox.Web.dll
 C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\obj\Debug\netcoreapp3.1\CheckBox.Web.pdb
-C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\obj\Debug\netcoreapp3.1\CheckBox.Web.genruntimeconfig.cache
 C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\obj\Debug\netcoreapp3.1\CheckBox.Web.csproj.CopyComplete
 C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
@@ -84,11 +77,6 @@ C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\bin\Debug\netcoreapp3.
 C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\bin\Debug\netcoreapp3.1\CheckBox.Core.pdb
 C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\bin\Debug\netcoreapp3.1\CheckBox.Data.pdb
 C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\bin\Debug\netcoreapp3.1\CheckBox.Services.pdb
-C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
-C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
-C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
-C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
-C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\bin\Debug\netcoreapp3.1\AutoMapper.dll
 C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
@@ -100,3 +88,12 @@ C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\obj\Debug\netcoreapp3.
 C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\obj\Debug\netcoreapp3.1\Razor\Views\Note\Create.cshtml.g.cs
 C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\obj\Debug\netcoreapp3.1\Razor\Views\Note\Index.cshtml.g.cs
 C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\obj\Debug\netcoreapp3.1\Razor\Views\Note\Editar.cshtml.g.cs
+C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\obj\Debug\netcoreapp3.1\CheckBox.Web.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\obj\Debug\netcoreapp3.1\staticwebassets\CheckBox.Web.StaticWebAssets.Pack.cache
+C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.CheckBox.Web.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.build.CheckBox.Web.props
+C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildMultiTargeting.CheckBox.Web.props
+C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildTransitive.CheckBox.Web.props
+C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\obj\Debug\netcoreapp3.1\CheckBox.Web.genruntimeconfig.cache
+C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\obj\Debug\netcoreapp3.1\Razor\Views\Note\_note.cshtml.g.cs
+C:\Users\João Emanuel\source\repos\CheckBox\CheckBox.Web\obj\Debug\netcoreapp3.1\Razor\Views\User\Profile.cshtml.g.cs
