@@ -36,7 +36,7 @@ namespace CheckBox.Web
             services.AddServicesDependency();
             services.AddRepositoryDependency();
             services.AddAutoMapper(typeof(MapperProfile));
-            services.AddDbContext<Context>(opt => opt.UseSqlServer("Server=DESKTOP-O2Q1VSQ\\SQLEXPRESS;Database=CheckDB;Trusted_Connection=True;"));
+            services.AddDbContext<Context>(opt => opt.UseSqlServer("Server=DESKTOP-O2Q1VSQ\\SQLEXPRESS;Database=CheckDB;Trusted_Connection=True;TrustServerCertificate=True;"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
