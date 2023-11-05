@@ -10,9 +10,16 @@ namespace CheckBox.Services
     public class NoteService : BaseService<Note>, INoteService
     {
         private readonly INoteRepository _noteRepository;
-        public NoteService(INoteRepository noteRepository) : base(noteRepository)
+        private readonly IUserService _userService;
+        public NoteService(INoteRepository noteRepository, IUserService userService) : base(noteRepository)
         {
             this._noteRepository = noteRepository;
+            _userService = userService;
+        }
+        public override void Create(Note entity)
+        {
+            entity.User = _userService.GetbyID(entity.UserId);
+            base.Create(entity);
         }
     }
 }

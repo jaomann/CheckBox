@@ -30,6 +30,7 @@ namespace CheckBox.Web.Controllers
             var user = _mapper.Map<UserViewModel>(_userServices.GetbyID(id));
             ViewData["user"] = user;
             var notes = _mapper.Map<IEnumerable<NoteViewModel>>(_noteService.GetAll().Where(x => x.UserId.Equals(user.Id)));
+            user.Notes = _mapper.Map<IEnumerable<Note>>(notes);
             ViewBag.Notes = notes;
             return View();
         }

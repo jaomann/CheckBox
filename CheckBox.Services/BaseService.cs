@@ -14,7 +14,7 @@ namespace CheckBox.Services
         {
             _baseRepository = baseRepository;
         }
-        public void Create(T entity)
+        public virtual void Create(T entity)
         {
             _baseRepository.Add(entity);
         }

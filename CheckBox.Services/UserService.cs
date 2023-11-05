@@ -10,6 +10,7 @@ namespace CheckBox.Services
     public class UserService : BaseService<User>, IUserService
     {
         private readonly IUserRepository _userRepository;
+        private readonly INoteService _noteService;
         public UserService(IUserRepository userRepository):base(userRepository)
         {
             _userRepository = userRepository;
@@ -39,6 +40,10 @@ namespace CheckBox.Services
             }
             return null;
             
+        }
+        public override void Create(User entity)
+        {
+            base.Create(entity);
         }
     }
 }
