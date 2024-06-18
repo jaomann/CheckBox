@@ -1,32 +1,35 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\João Emanuel\\source\\repos\\CheckBox\\CheckBox.Services\\CheckBox.Services.csproj": {}
+    "C:\\Users\\joao-\\source\\repos\\jaomann\\CheckBox\\CheckBox.Services\\CheckBox.Services.csproj": {}
   },
   "projects": {
-    "C:\\Users\\João Emanuel\\source\\repos\\CheckBox\\CheckBox.Core\\CheckBox.Core.csproj": {
+    "C:\\Users\\joao-\\source\\repos\\jaomann\\CheckBox\\CheckBox.Core\\CheckBox.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\João Emanuel\\source\\repos\\CheckBox\\CheckBox.Core\\CheckBox.Core.csproj",
+        "projectUniqueName": "C:\\Users\\joao-\\source\\repos\\jaomann\\CheckBox\\CheckBox.Core\\CheckBox.Core.csproj",
         "projectName": "CheckBox.Core",
-        "projectPath": "C:\\Users\\João Emanuel\\source\\repos\\CheckBox\\CheckBox.Core\\CheckBox.Core.csproj",
-        "packagesPath": "C:\\Users\\João Emanuel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\João Emanuel\\source\\repos\\CheckBox\\CheckBox.Core\\obj\\",
+        "projectPath": "C:\\Users\\joao-\\source\\repos\\jaomann\\CheckBox\\CheckBox.Core\\CheckBox.Core.csproj",
+        "packagesPath": "C:\\Users\\joao-\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\joao-\\source\\repos\\jaomann\\CheckBox\\CheckBox.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\João Emanuel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\joao-\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -34,15 +37,20 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
             "Newtonsoft.Json": {
               "target": "Package",
-              "version": "[10.0.1, )"
+              "version": "[13.0.1, )"
             }
           },
           "imports": [
@@ -61,36 +69,39 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\João Emanuel\\source\\repos\\CheckBox\\CheckBox.Data\\CheckBox.Data.csproj": {
+    "C:\\Users\\joao-\\source\\repos\\jaomann\\CheckBox\\CheckBox.Data\\CheckBox.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\João Emanuel\\source\\repos\\CheckBox\\CheckBox.Data\\CheckBox.Data.csproj",
+        "projectUniqueName": "C:\\Users\\joao-\\source\\repos\\jaomann\\CheckBox\\CheckBox.Data\\CheckBox.Data.csproj",
         "projectName": "CheckBox.Data",
-        "projectPath": "C:\\Users\\João Emanuel\\source\\repos\\CheckBox\\CheckBox.Data\\CheckBox.Data.csproj",
-        "packagesPath": "C:\\Users\\João Emanuel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\João Emanuel\\source\\repos\\CheckBox\\CheckBox.Data\\obj\\",
+        "projectPath": "C:\\Users\\joao-\\source\\repos\\jaomann\\CheckBox\\CheckBox.Data\\CheckBox.Data.csproj",
+        "packagesPath": "C:\\Users\\joao-\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\joao-\\source\\repos\\jaomann\\CheckBox\\CheckBox.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\João Emanuel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\joao-\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\João Emanuel\\source\\repos\\CheckBox\\CheckBox.Core\\CheckBox.Core.csproj": {
-                "projectPath": "C:\\Users\\João Emanuel\\source\\repos\\CheckBox\\CheckBox.Core\\CheckBox.Core.csproj"
+              "C:\\Users\\joao-\\source\\repos\\jaomann\\CheckBox\\CheckBox.Core\\CheckBox.Core.csproj": {
+                "projectPath": "C:\\Users\\joao-\\source\\repos\\jaomann\\CheckBox\\CheckBox.Core\\CheckBox.Core.csproj"
               }
             }
           }
@@ -99,35 +110,40 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.InMemory": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.0, )"
             }
           },
           "imports": [
@@ -146,39 +162,42 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\João Emanuel\\source\\repos\\CheckBox\\CheckBox.Services\\CheckBox.Services.csproj": {
+    "C:\\Users\\joao-\\source\\repos\\jaomann\\CheckBox\\CheckBox.Services\\CheckBox.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\João Emanuel\\source\\repos\\CheckBox\\CheckBox.Services\\CheckBox.Services.csproj",
+        "projectUniqueName": "C:\\Users\\joao-\\source\\repos\\jaomann\\CheckBox\\CheckBox.Services\\CheckBox.Services.csproj",
         "projectName": "CheckBox.Services",
-        "projectPath": "C:\\Users\\João Emanuel\\source\\repos\\CheckBox\\CheckBox.Services\\CheckBox.Services.csproj",
-        "packagesPath": "C:\\Users\\João Emanuel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\João Emanuel\\source\\repos\\CheckBox\\CheckBox.Services\\obj\\",
+        "projectPath": "C:\\Users\\joao-\\source\\repos\\jaomann\\CheckBox\\CheckBox.Services\\CheckBox.Services.csproj",
+        "packagesPath": "C:\\Users\\joao-\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\joao-\\source\\repos\\jaomann\\CheckBox\\CheckBox.Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\João Emanuel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\joao-\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\João Emanuel\\source\\repos\\CheckBox\\CheckBox.Core\\CheckBox.Core.csproj": {
-                "projectPath": "C:\\Users\\João Emanuel\\source\\repos\\CheckBox\\CheckBox.Core\\CheckBox.Core.csproj"
+              "C:\\Users\\joao-\\source\\repos\\jaomann\\CheckBox\\CheckBox.Core\\CheckBox.Core.csproj": {
+                "projectPath": "C:\\Users\\joao-\\source\\repos\\jaomann\\CheckBox\\CheckBox.Core\\CheckBox.Core.csproj"
               },
-              "C:\\Users\\João Emanuel\\source\\repos\\CheckBox\\CheckBox.Data\\CheckBox.Data.csproj": {
-                "projectPath": "C:\\Users\\João Emanuel\\source\\repos\\CheckBox\\CheckBox.Data\\CheckBox.Data.csproj"
+              "C:\\Users\\joao-\\source\\repos\\jaomann\\CheckBox\\CheckBox.Data\\CheckBox.Data.csproj": {
+                "projectPath": "C:\\Users\\joao-\\source\\repos\\jaomann\\CheckBox\\CheckBox.Data\\CheckBox.Data.csproj"
               }
             }
           }
@@ -187,11 +206,16 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "imports": [
             "net461",
             "net462",
@@ -208,7 +232,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }
