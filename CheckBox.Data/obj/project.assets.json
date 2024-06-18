@@ -2067,6 +2067,7 @@
     "net6.0": [
       "CheckBox.Core >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 6.0.31",
+      "Microsoft.EntityFrameworkCore.Analyzers >= 6.0.31",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.31",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.31",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.31"
@@ -2124,6 +2125,10 @@
         "targetAlias": "net6.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[6.0.31, )"
+          },
+          "Microsoft.EntityFrameworkCore.Analyzers": {
             "target": "Package",
             "version": "[6.0.31, )"
           },

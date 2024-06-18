@@ -832,6 +832,7 @@
         "dependencies": {
           "CheckBox.Core": "1.0.0",
           "Microsoft.EntityFrameworkCore": "6.0.31",
+          "Microsoft.EntityFrameworkCore.Analyzers": "6.0.31",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.31"
         },
         "compile": {
