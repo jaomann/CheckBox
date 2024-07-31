@@ -10,10 +10,10 @@
         <div class="col-md-10 d-inline-flex">
             <h2 class="text-light">Olá</h2><h2 class="text-warning ml-2">@user.Name @user.Surname</h2>
         </div>
-            <a class="pt-2 btn btn-outline-danger text-sm-center" asp-action="Logout" asp-controller="Auth">Logout</a>
+        <a class="pt-2 btn btn-outline-danger text-sm-center" href="/api/auth/logout">Logout</a>
     </header>
-    <main style="background-color:#202020;" class="rounded">
-        <div class="row d-flex m-1 justify-content-end">
+    <main class="container-fluid" style="background-color:#202020;" class="rounded">
+        <div class="row d-flex m-1 justify-content-initial">
             <h2 class="m-2 text-white-50">Suas notes</h2>
         </div>
         @{

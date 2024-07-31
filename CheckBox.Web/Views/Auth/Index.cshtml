@@ -1,9 +1,5 @@
-﻿@using CheckBox.Web.Models
-@model UserViewModel
-
-@{
+﻿@{
     ViewData["Title"] = "Welcome";
-    var errorMessage = (string)ViewData["Error"];
 }
 
 <div class="container-index">
@@ -28,29 +24,20 @@
             <h2>Check</h2><h2 class="text-light">Box</h2>
         </div>
         <div class="itens">
-            <form method="post" asp-controller="Auth" asp-action="Index">
+            <div class="form-group">
                 <h5 class="text-white">Login</h5>
-                @Html.TextBoxFor(x => x.Email, new{placeholder ="Insira seu email", @class="form-control mt-2"})
-                <span asp-validation-for="Email" class="text-danger"></span>
-                @Html.PasswordFor(x => x.Password, new{placeholder = "Insira sua senha", @class="form-control mt-2"})
-                <span asp-validation-for="Password" class="text-danger"></span>
-                <button type="submit" class="btn btn-warning text-dark mt-3">Entrar</button>
-                <div class="row mt-2 text-center">
-                </div>
+                <input type="email" placeholder = "Insira seu email" class="form-control mt-2 userEmailLogin" required/>
+                <input type="password" placeholder="Insira seu email" class="form-control mt-2 userPasswordLogin" required />
+                <button class="btn btn-warning text-dark mt-3" onclick="login()">Entrar</button>
                 <div class="row mt-2 text-white">
                     <div class="col-md-12">
-                        <p>Ainda não tem conta? <a asp-action="Register" asp-controller="Auth" class="text-white" type="button" data-toggle="modal" data-target="#register"> Clica aqui</a></p>
-                        <p class="text-danger">@errorMessage</p>
+                        <p>Ainda não tem conta? <a class="text-white font-weight-bold" data-toggle="modal" data-target="#register"> Clica aqui</a></p>
                     </div>
                 </div>
-            </form>
-            <partial name="_register" model="@new UserViewModel()" />
+            </div>
+            <partial name="_register" />
         </div>
     </div>
 </div>
-
-@section Scripts{
-    @{
-        await Html.RenderPartialAsync("_ValidationScriptsPartial");
-    }
-}
+<script src="~/js/site.js" asp-append-version="true"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>

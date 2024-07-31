@@ -4,13 +4,13 @@ using CheckBox.Core.Entities;
 using System.Security.Cryptography;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace CheckBox.Services
 {
     public class UserService : BaseService<User>, IUserService
     {
         private readonly IUserRepository _userRepository;
-        private readonly INoteService _noteService;
         public UserService(IUserRepository userRepository):base(userRepository)
         {
             _userRepository = userRepository;
@@ -30,20 +30,22 @@ namespace CheckBox.Services
             return sb.ToString();
         }
 
-        public User ValidateUser(User entity)
+        public async Task<User> ValidateUser(User entity)
         {
-            var real_user = _userRepository.GetAll().FirstOrDefault(x => x.Email.Equals(entity.Email));
-            var hashPassword = GenerateHashCode(entity.Password);
-            if (real_user != null && real_user.Password == hashPassword)
-                {
+            var real_user = await _userRepository.GetbyEmail(entity.Email);
+            if (real_user is not null && real_user.Password.Equals(GenerateHashCode(entity.Password)))
                 return real_user;
-            }
             return null;
             
         }
         public override void Create(User entity)
         {
-            base.Create(entity);
+            _userRepository.Add(entity);
+        }
+
+        public async Task<bool> Exists(string email)
+        {
+            return await _userRepository.Exists(email);
         }
     }
 }

@@ -4,7 +4,6 @@ using CheckBox.Core.Entities;
 using CheckBox.Web.Helper;
 using CheckBox.Web.Models;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore.SqlServer.Query.Internal;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,7 +24,7 @@ namespace CheckBox.Web.Controllers
             _session = session;
         }
         public IActionResult Index()
-        {
+       {
             Guid id = _session.FindUserSession().Id;
             var user = _mapper.Map<UserViewModel>(_userServices.GetbyID(id));
             ViewData["user"] = user;

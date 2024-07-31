@@ -4,8 +4,10 @@ using CheckBox.Core.Entities;
 using CheckBox.Web.Helper;
 using CheckBox.Web.Models;
 using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections;
 using System.Security.Cryptography;
+using System.Threading.Tasks;
 namespace CheckBox.Web.Controllers
 {
     public class AuthController : Controller
@@ -30,30 +32,46 @@ namespace CheckBox.Web.Controllers
         }
 
         [HttpPost]
-        public IActionResult Index(UserViewModel entity)
+        [Route("api/auth/login")]
+        public async Task<IActionResult> Login([FromBody] UserViewModel entity)
         {
-            var current_user = _mapper.Map<UserViewModel>(_userService.ValidateUser(_mapper.Map<User>(entity)));
-            if (current_user != null)
-            {
+            var valid_user = await _userService.ValidateUser(_mapper.Map<User>(entity));
+            if(valid_user is not null) { 
+                var current_user = _mapper.Map<UserViewModel>(valid_user);
                 _session.MakeSession(current_user);
-                return RedirectToAction("Index", "Note");
+                return Ok();
             }
-            ViewData["Error"] = "Usuário ou senha incorretos";
-            return View();
+            return Unauthorized();
         }
 
         [HttpPost]
-        public IActionResult Register(UserViewModel entity)
+        [Route("api/auth/register")]
+        public async Task<IActionResult> Register([FromBody] UserViewModel entity)
         {
-            var entityUser = _mapper.Map<User>(entity);
-            entityUser.Password = _userService.GenerateHashCode(entity.Password);
-            _userService.Create(entityUser);
-            return RedirectToAction("Index", "Auth");
+            if(entity is not null)
+            {
+                if (await _userService.Exists(entity.Email))
+                    return Unauthorized("Endereço de email já sendo usado");
+                
+                var entityUser = _mapper.Map<User>(entity);
+                try
+                {
+                    entityUser.Password = _userService.GenerateHashCode(entity.Password);
+                    _userService.Create(entityUser);
+                    return Ok();
+                }
+                catch (Exception ex)
+                {
+                    return NotFound(ex.Message);
+                };
+            }
+            return NotFound("Formulário vazio");
         }
+        [Route("api/auth/logout")]
         public IActionResult Logout()
         {
             _session.RemoveSession();
-            return RedirectToAction("Index");
+            return RedirectToAction(nameof(Index));
         }
     }
 }

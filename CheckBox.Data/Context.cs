@@ -18,8 +18,7 @@ namespace CheckBox.Data
         {
             if (!string.IsNullOrEmpty(_connectionString))
             {
-                optionsBuilder.UseSqlServer(_connectionString);
-                                            /*"Server=(localdb)\\MSSQLLocalDB;Database=ClassroomHubDB;Trusted_Connection=True;"*/
+                optionsBuilder.UseMySql(_connectionString, new MySqlServerVersion(new Version(8,0,11)));
             }
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
